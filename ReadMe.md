@@ -13,7 +13,7 @@ it is a command-line tool built with Node.js that fetches TODO items from a remo
 Before using do `npm install`
 To fetch and display TODO items, run the following command:
 
-        npm start todos
+        npm start:todos
 
 Optional arguments:
 
@@ -21,4 +21,16 @@ Optional arguments:
 
 Example with custom limit given below:
 
-        npm start todos --limit 50
+        node src/index.js todos --evenLimit 5
+
+## Docker
+
+Build docker image from below command
+
+            docker build -t cli-todo-tool .
+
+Run the image after build using below command
+
+        docker run -it --rm cli-todo-tool
+
+MIT licencse

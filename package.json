@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node src/index.js",
+    "start:todos": "node src/index.js todos",
+    "start:todosWithFiftyEvenNumber": "node src/index.js todos --evenLimit 50",
     "test": "node --experimental-vm-modules ./node_modules/.bin/jest"
   },
   "author": "Salauddin",
